@@ -4,6 +4,7 @@
   </requirements>
   <description>This new version BWA (0.7.5) use 'mem' algorithm for mapping, dosen't need 'aln', 'samse', 'sampe' and picard AddOrReplace anymore.</description>
   <parallelism method="basic"></parallelism>
+  <version_command>bwa 2&gt;&amp;1 | grep "Version: " | sed -e 's/Version: //' </version_command> 
   <command interpreter="python">
     bwa_0_7_5.py 
       --threads="1"
