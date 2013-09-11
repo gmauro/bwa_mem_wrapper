@@ -225,7 +225,7 @@ def __main__():
     if args.genAlignType == 'paired':
         cmd = 'bwa mem %s %s %s %s %s > %s' % ( start_cmds, ref_file_name, fastq, rfastq, end_cmds, args.output )
     else:
-        cmd = 'bwa mem %s %s %s > %s' % ( start_cmds, ref_file_name, fastq, end_cmds, args.output )
+        cmd = 'bwa mem %s %s %s %s > %s' % ( start_cmds, ref_file_name, fastq, end_cmds, args.output )
 
   # perform alignments
     buffsize = 1048576
