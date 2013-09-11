@@ -122,7 +122,7 @@ def __main__():
     tmp_index_dir = tempfile.mkdtemp()
     tmp_dir = tempfile.mkdtemp()
     # index if necessary
-    if args.fileSource == 'history' and not args.do_not_build_index:
+    if args.fileSource == 'history':
         ref_file = tempfile.NamedTemporaryFile( dir=tmp_index_dir )
         ref_file_name = ref_file.name
         ref_file.close()
